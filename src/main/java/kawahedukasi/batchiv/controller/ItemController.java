@@ -1,12 +1,12 @@
 package kawahedukasi.batchiv.controller;
 
-import com.oracle.svm.core.annotate.Delete;
 import kawahedukasi.batchiv.model.Item;
 
 import javax.transaction.Transactional;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -38,8 +38,8 @@ public class ItemController {
         item.price = Double.parseDouble(request.get("price").toString());
         item.type = request.get("type").toString();
         item.description = request.get("description").toString();
-        item.createdAt = request.get("createdAt").toString();
-        item.updatedAt = request.get("updatedAt").toString();
+        item.createdAt = LocalDateTime.parse(request.get("createdAt").toString());
+        item.updatedAt = LocalDateTime.parse(request.get("updatedAt").toString());
         item.persist();
 
         return Response.status(Response.Status.CREATED).entity(new HashMap<>()).build();
@@ -58,8 +58,8 @@ public class ItemController {
         item.price = Double.parseDouble(request.get("price").toString());
         item.type = request.get("type").toString();
         item.description = request.get("description").toString();
-        item.createdAt = request.get("createdAt").toString();
-        item.updatedAt = request.get("updatedAt").toString();
+        item.createdAt = LocalDateTime.parse(request.get("createdAt").toString());
+        item.updatedAt = LocalDateTime.parse(request.get("updatedAt").toString());
         item.persist();
 
         return Response.status(Response.Status.CREATED).entity(new HashMap<>()).build();
@@ -68,7 +68,7 @@ public class ItemController {
     @DELETE
     @Path("/{itemId}")
     @Transactional
-    public Response delete(@PathParam("itemId") Long itemId, Map<String, Object> request){
+    public Response delete(@PathParam("itemId") Long itemId){
         Item item = Item.findById(itemId);
         if (item == null) {
             return Response.status(Response.Status.BAD_REQUEST).build();
