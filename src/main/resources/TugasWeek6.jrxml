@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Tugas_Week_-_6" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2eb772b2-d495-42a9-a88c-c37012d1a72e">
+
+	<field name="itemId" class="java.lang.Long">
+	</field>
+	<field name="count" class="java.lang.Integer">
+	</field>
+	<field name="createdAt" class="java.time.LocalDateTime">
+	</field>
+	<field name="description" class="java.lang.String">
+	</field>
+	<field name="name" class="java.lang.String">
+	</field>
+	<field name="price" class="java.lang.Double">
+	</field>
+	<field name="type" class="java.lang.String">
+	</field>
+	<field name="updatedAt" class="java.time.LocalDateTime">
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="fc8bebad-1999-4855-a31d-aeb9a13395e9"/>
+				<staticText>
+					<reportElement x="20" y="20" width="234" height="43" forecolor="#FFFFFF" uuid="71b9cfa6-8c5e-423d-aef6-34816654d80b"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Tugas Week 6]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="395" y="43" width="180" height="20" forecolor="#FFFFFF" uuid="5d59e206-f51f-46b9-ada6-f3c7579d9b06"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[All Item Informations]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="af0d18f2-0f57-48e2-bfae-4f1db2548b69"/>
+			</line>
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="0" width="50" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="bfa23914-4857-4150-845f-a658304db243">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="756e20a5-d201-41cc-aa20-9d5d403af0fb"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="119" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="4ff24283-d5ad-4484-ab00-ca2cedb73560">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b10f76a4-a8e5-4d43-845c-5cf65550fd84"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Count]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="464" y="0" width="91" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="fec970f5-bb32-492f-b9a3-f8e0b21e1f00">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9cfc2391-186f-4623-8e91-b4c9382b66dc"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="50" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="81d9bfbf-8166-4a4c-bb3d-f67a30ae9c60">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1658413c-6d3e-48a8-8e05-4ecb296cee18"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="188" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="0f41508c-2e3a-470e-a5ee-3ebdeffc695f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7f1336cc-f85c-43d7-a958-d57248d23b72"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="257" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="44989ff1-4233-48a7-b13c-f8b6beb7f303">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="795d9489-57db-4810-8829-5369abe256e8"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="326" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="7c44c890-d9d6-481d-8c78-97e24df5f9cc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3081ef5f-7a5f-4ae6-95bd-28451ca4dc61"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Created]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="395" y="0" width="69" height="20" forecolor="#006699" backcolor="#E6E6E6" uuid="f1be510e-e25c-4869-ad23-e52ab8d9e712">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1256b24a-0bcd-4267-b33f-40494e47ff6d"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Updated]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="2959c2e4-0699-42b8-9ac9-6c76c7ffd8f9"/>
+			</line>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="0" width="50" height="20" uuid="e376249c-e681-48f3-96a1-8d13f4af4ea2">
+					<property name="com.jaspersoft.studio.data.sql.tables" value="aXRlbSAsMTUsMTUsMGMwMzg5OTktNWQzMi00M2UyLTlhZDAtZDI1ZDRmMWVjOGM2Ow=="/>
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KWE - TugasWeek6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{itemId}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="119" y="0" width="69" height="20" uuid="9809b9a4-213d-400f-b6d4-5f3607d24398">
+					<property name="com.jaspersoft.studio.data.sql.tables" value="aXRlbSAsMTUsMTUsMGMwMzg5OTktNWQzMi00M2UyLTlhZDAtZDI1ZDRmMWVjOGM2Ow=="/>
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KWE - TugasWeek6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{count}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="326" y="0" width="69" height="20" uuid="fde73065-dbb2-4f04-9443-8ba108acf280">
+					<property name="com.jaspersoft.studio.data.sql.tables" value="aXRlbSAsMTUsMTUsMGMwMzg5OTktNWQzMi00M2UyLTlhZDAtZDI1ZDRmMWVjOGM2Ow=="/>
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KWE - TugasWeek6"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{createdAt}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="464" y="0" width="91" height="20" uuid="f3272263-6d5a-4740-8f70-882d9c36d092">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9cfc2391-186f-4623-8e91-b4c9382b66dc"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="50" y="0" width="69" height="20" uuid="2779370e-0153-461c-a989-f80de3c4654c">
+					<property name="com.jaspersoft.studio.data.sql.tables" value="aXRlbSAsMTUsMTUsMGMwMzg5OTktNWQzMi00M2UyLTlhZDAtZDI1ZDRmMWVjOGM2Ow=="/>
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KWE - TugasWeek6"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="188" y="0" width="69" height="20" uuid="d6bc626e-8268-421c-a86e-9eb92e4a62b7">
+					<property name="com.jaspersoft.studio.data.sql.tables" value="aXRlbSAsMTUsMTUsMGMwMzg5OTktNWQzMi00M2UyLTlhZDAtZDI1ZDRmMWVjOGM2Ow=="/>
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KWE - TugasWeek6"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="257" y="0" width="69" height="20" uuid="63c03f90-0c3c-456a-834f-fbe16e8820df">
+					<property name="com.jaspersoft.studio.data.sql.tables" value="aXRlbSAsMTUsMTUsMGMwMzg5OTktNWQzMi00M2UyLTlhZDAtZDI1ZDRmMWVjOGM2Ow=="/>
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KWE - TugasWeek6"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{type}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="395" y="0" width="69" height="20" uuid="534869f1-d0b0-4bd6-a0eb-53e994478460">
+					<property name="com.jaspersoft.studio.data.sql.tables" value="aXRlbSAsMTUsMTUsMGMwMzg5OTktNWQzMi00M2UyLTlhZDAtZDI1ZDRmMWVjOGM2Ow=="/>
+					<property name="com.jaspersoft.studio.data.defaultdataadapter" value="KWE - TugasWeek6"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{updatedAt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="54a9f1b7-02e9-461e-b200-e57b52d32917"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="eb27c496-152d-4faa-9a0a-7c0ed9fcdabf"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="0" y="4" width="100" height="13" uuid="cd30391f-de31-4bff-834e-89ca818239a9"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

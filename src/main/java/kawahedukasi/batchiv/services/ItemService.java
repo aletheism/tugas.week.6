@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ApplicationScoped
-public class ItemServices {
+public class ItemService {
     @Transactional
     public Response get(){
         return Response.status(Response.Status.OK).entity(Item.findAll().list()).build();
