@@ -1,6 +1,6 @@
 package kawahedukasi.batchiv.controller;
 
-import kawahedukasi.batchiv.model.FileDTO;
+import kawahedukasi.batchiv.DTO.FileDTO;
 import kawahedukasi.batchiv.services.ExportService;
 import kawahedukasi.batchiv.services.ImportService;
 import kawahedukasi.batchiv.services.ItemService;

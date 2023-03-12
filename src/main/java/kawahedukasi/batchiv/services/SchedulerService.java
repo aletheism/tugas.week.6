@@ -17,8 +17,8 @@ public class SchedulerService {
 
     Logger logger = LoggerFactory.getLogger(SchedulerService.class);
 
-//    @Scheduled(cron = "* 53 23 10 * ? *")
-    @Scheduled(every = "5s")
+//    @Scheduled(every = "5s") //for test
+    @Scheduled(cron = "* * 17 ? * FRI *") //send email every friday at 17:00
     public void sendItemListExcel() throws JRException, IOException {
         mailService.sendAllToEmail("bot.gigihdemo@gmail.com");
         logger.info("All Related File Sent to Email");

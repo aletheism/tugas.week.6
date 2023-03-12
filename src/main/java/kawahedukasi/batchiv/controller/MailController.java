@@ -22,7 +22,7 @@ public class MailController {
     MailService mailService;
 
     @POST
-    @Path("/all-file")
+    @Path("/send-all")
     public Response sendAllToEmail(Map<String,Object> request) throws JRException, IOException {
         mailService.sendAllToEmail(request.get("email").toString());
         return Response.ok(new HashMap<>()).build();

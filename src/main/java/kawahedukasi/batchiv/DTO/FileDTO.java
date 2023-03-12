@@ -1,4 +1,4 @@
-package kawahedukasi.batchiv.model;
+package kawahedukasi.batchiv.DTO;
 
 import org.jboss.resteasy.annotations.Form;
 

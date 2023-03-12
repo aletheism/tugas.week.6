@@ -1,6 +1,6 @@
 package kawahedukasi.batchiv.services;
 
-import kawahedukasi.batchiv.model.FileDTO;
+import kawahedukasi.batchiv.DTO.FileDTO;
 import kawahedukasi.batchiv.model.Item;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;

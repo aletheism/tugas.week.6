@@ -30,13 +30,14 @@ public class ExportService {
         //export jasper ke pdf
         return JasperExportManager.exportReportToPdf(jasperPrint);
     }
+
     public Response exportPdf() throws JRException {
         //load template
         byte[] jasperResult = pdfItem();
 
         return Response.ok()
                 .type("application/pdf")
-                .header("Content-Disposition", "attachment; filename=\"item_list_excel.pdf\"")
+                .header("Content-Disposition", "attachment; filename=\"item_list_pdf.pdf\"")
                 .entity(jasperResult).build();
     }
 

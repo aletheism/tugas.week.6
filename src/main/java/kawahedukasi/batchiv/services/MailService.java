@@ -20,8 +20,8 @@ public class MailService {
         mailer.send(
                 Mail.withText(
                         email,
-                        "Excel Item List",
-                        "Ingfokan item terbanyak"
+                        "Excel & Pdf Item List",
+                        "Ingfokan semua item"
                 ).addAttachment("item-list.xlsx"
                         ,exportService.excelItem().toByteArray()
                         ,"application/vnd.openxmlformtas-officedocument.spreadsheetml.sheet"
